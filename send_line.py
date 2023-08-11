@@ -1,12 +1,12 @@
 import requests
 
-# 아래 값은 임시 키 입니다.
-key = "UGWTRR8IzlArM6mxD3n1i1NnLqmWaMHHA4TRM46G0Is"
+# YOUR_ACCESS_TOKEN을 실제 토큰으로 변경해주세요
+key = ""  
 
 def send_line(msg=None, imgfile=None):
     url = "https://notify-api.line.me/api/notify"
     headers = {
-        "Authorization": f"Bearer {key}"  # YOUR_ACCESS_TOKEN을 실제 토큰으로 변경해주세요
+        "Authorization": f"Bearer {key}" 
     }
 
     if msg is not None and imgfile is not None:
